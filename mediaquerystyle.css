@@ -1,0 +1,391 @@
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    /* Navigation */
+    #navset {
+        padding-left: 0;
+        width: 100%;
+    }
+    .nav-links {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background:transparent;
+        /* padding: 20px 15px; */
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-links li {
+        list-style: none;
+        margin: 0 12px;
+    }
+    
+    .nav-links li a {
+        position: relative;
+        color: white;
+        font-size: 10px;
+        font-weight: 500;
+        padding: 3px 0;
+        text-decoration: none;
+    }
+    
+    .nav-links li a:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background: #34efdf;
+        border-radius: 12px;
+        transition: all 0.4s ease;
+    }
+    
+    .nav-links li a:hover:before {
+        width: 100%;
+    }
+    
+    .nav-links li.center a:before {
+        left: 20%;
+        transform: translateX(-50%);
+    }
+    
+    .nav-links li.upward a:before {
+        width: 100%;
+        bottom: -5px;
+        opacity: 0;
+    }
+    
+    .nav-links li.upward a:hover:before {
+        bottom: 0px;
+        opacity: 1;
+    }
+    
+    .nav-links li.forward a:before {
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease;
+    }
+    
+    .nav-links li.forward a:hover:before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    
+
+    /* Header */
+    .header {
+        padding: 20px 2%;
+    }
+
+    .logo,
+    .navbar {
+        font-size: 16px;
+    }
+
+    /* Marquee */
+    #marqueebox {
+        font-size: 16px;
+        margin-top: 200px;
+    }
+#headings{
+    text-align: center; color: silver;
+}
+    /* About Me */
+    .aboutme {
+        margin-left: 0; /* Adjust margin for center alignment */
+        margin-right: 10px; /* Adjust margin for center alignment */
+        width: 400px;
+        height: max-content; /* Adjust width for smaller screens */
+        margin-top: 50px; /* Adjust margin for spacing */
+    }
+
+    .experience-container {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .experience h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .experience p {
+        margin-top: 5px;
+        font-size: 13px;
+        color: #666;
+    }
+    .experience {
+        display: flex;
+        width: 90%;
+        max-width: 450px;
+        margin-bottom: 20px;
+    }
+
+    .experience .line {
+        width: 2px;
+        background-color: #ccc;
+        margin: 0 10px;
+        /* display: flex; Hide the line */
+        
+    }
+
+    .experience .left,
+.experience .right {
+    flex: 2;
+}
+
+.experience .left {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.experience .right {
+    text-align: left;
+    padding-left: 20px;
+}
+.experience-box{
+    /* position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 40%;
+    width: 50vw;
+    margin-top: 100px; */
+     margin-left: 0; 
+     margin-right: 10px; 
+    width: max-content;
+    height: max-content; /* Adjust width for smaller screens */
+    margin-top: 50px;  
+}
+
+    /* Profile */
+    #profilediv {
+        padding-left: 0;
+        justify-content: center;
+        height: 200px/* Adjust margin for center alignment */
+    }
+
+    #imageprofilediv {
+        float: none; /* Remove float */
+        margin: 0 auto; /* Center the image */
+    }
+
+    #profileinfo {  
+        padding-left: 20px;
+            width:600px;
+            display: flex;
+            flex-direction: column;
+           
+        
+    }
+    #image1 {
+        /* padding-left: 150px; */
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        border: 15px double black;
+    
+    }
+  
+
+    /* Tech Stack */
+    .techstack {
+        width:100%;
+        padding-top: 50px; /* Adjust padding for spacing */
+        /* padding-left: 50vw; Adjust padding for center alignment */
+    }
+
+    /* Tech Images */
+    .techimages {
+        padding-top: 20px;
+      /* width: 400px; */
+        height: max-content ; /* Adjust padding for spacing */
+         flex-wrap: wrap;
+        /* justify-content: start; */
+    }
+
+   
+    #techpic {  
+        /* padding: 10px;  */
+        height: 170px; /* Adjust image size for smaller screens */
+        width: 50px;
+    }
+
+    /* Projects */
+    .displayProject {
+        margin-left: 5%; /* Adjust margin for spacing */
+    }
+
+    .project-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+    .txt-rotate>.wrap {
+        border-right: 0.08em solid rgb(167, 0, 0);
+        color: silver;
+        font-size: 15px;
+        position: relative;
+        margin-top: -10px;
+        clear: both;
+        float: left;
+        word-spacing: 1px;
+        letter-spacing: 0.25px;
+        line-break: strict;
+    
+    
+    }
+    #hi{
+        color:silver;
+        font-size: 15px; 
+    }
+    #name{
+        font-size: 20px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); color:white; opacity: 90%;
+    }
+    #para{
+        position: relative;
+        width: 325px;color:silver;font-size: 15px;
+        height: max-content;
+    }
+    #para1{
+        width: 190px;color:silver;font-size: 15px;
+        height: 150px;
+    }
+    .displayCards {
+        position: relative;
+        padding-top: 40px;
+        margin: 10px;
+        width: 100vw;
+        z-index: 0;
+        /* display: flex; 
+        flex-direction: Column; */
+        /* justify-items: left;
+        align-items: center; */
+        display: grid;
+        grid: repeat(2, 250px) / auto-flow 220px;
+    }
+    .road{
+        display: none;
+    }
+    .web {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        float: left;
+        height: fit-content;
+        width:70%;
+    }
+    .main {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+        padding-top: 0px;
+        height: max-content;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #pane{
+        display: none;
+    }
+    #road{
+        display: none;
+    }
+    #rightheading{
+        color: white; text-align: left; font-size: 20px; font-weight: bold;
+    }
+    #rightcontent{
+        color: white;  font-size: 12px; width: 150px;
+    }
+    #leftheading{
+        color: white; text-align: right; font-size: 20px; font-weight: bold;    }
+    #leftcontent{
+        color: white; text-align: right;font-size: 12px; width: 100%;}
+#warning{
+    display: contents;
+   align-items: center;
+}
+#content{
+    color: white;
+}
+}
+
+@media screen and (max-width: 576px) {
+    /* Further adjustments for extra small screens */
+
+    /* Header */
+    .header {
+        padding: 20px 1%;
+    }
+
+    .logo,
+    .navbar {
+        font-size: 14px;
+    }
+
+    /* Marquee */
+    #marqueebox {
+        font-size: 14px;
+        margin-top: 100px;
+    }
+
+    /* About Me */
+    .aboutme {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-top: 20px; /* Adjust margin for spacing */
+    }
+
+    /* Profile */
+    #profileinfo {
+        margin: 20px auto; /* Adjust margin for center alignment */
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    #image1 {
+        width: 150px; /* Adjust image size for smaller screens */
+        height: 150px; /* Adjust image size for smaller screens */
+    }
+
+    /* Tech Stack */
+    .techstack {
+        padding-top: 20px; /* Adjust padding for spacing */
+        padding-left: 5%; /* Adjust padding for center alignment */
+    }
+
+    /* Tech Images */
+    .techimages {
+        padding-top: 10px; /* Adjust padding for spacing */
+    }
+
+    #techpic {
+        height: 30px; /* Adjust image size for smaller screens */
+    }
+
+    /* Projects */
+    .displayProject {
+        margin-left: 2%; /* Adjust margin for spacing */
+    }
+
+    .project-card {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+    #rightheading{
+        color: white; text-align: left; font-size: 20px; font-weight: bold;
+    }
+    #rightcontent{
+        color: white;  font-size: 12px; width: 150px;
+    }
+    #leftheading{
+        color: white; text-align: right; font-size: 20px; font-weight: bold;    }
+    #leftcontent{
+        color: white; text-align: right;font-size: 12px; width: 100%;
+
+}
+}

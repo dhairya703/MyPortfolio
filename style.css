@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin-top: 5px;
+    height: max-content;
+    overflow: auto;
+    background-color: black;
+    display: -webkit-box;
+    display: flex;
+}
+
+h5 {
+    font-weight: 200;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.9em;
+    color: #000;
+    padding: 0;
+    line-height: 0.8em;
+    text-transform: none;
+    font-weight: 600;
+}
+
+h5 span {
+    color: #ffffff;
+    animation-delay: 2s;
+    font-weight: 600;
+}
+
+.txt-rotate>.wrap {
+    border-right: 0.08em solid rgb(167, 0, 0);
+    color: silver;
+    font-size: 25px;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    clear: both;
+    float: left;
+    word-spacing: 1px;
+    letter-spacing: 0.25px;
+    line-break: strict;
+
+
+}
+
+.taglinerotate>.wrap {
+    border-right: 0.08em solid red;
+
+}
+
+.main {
+    
+    padding-top: 0px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 20px 15px;
+    border-radius: 12px;
+    gap: 40px;
+   
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.nav-links li a {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+    
+}
+
+.nav-links li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #34efdf;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before {
+    width: 100%;
+}
+
+.nav-links li.center a:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links li.upward a:before {
+    width: 100%;
+    bottom: -5px;
+    opacity: 0;
+}
+
+.nav-links li.upward a:hover:before {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.nav-links li.forward a:before {
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.nav-links li.forward a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+@keyframes glow {
+    from {
+        border-color: transparent;
+        box-shadow: none;
+    }
+
+    to {
+        border-color: inherit;
+        box-shadow: 0 0 20px rgba(33, 150, 243, 0.8);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+@keyframes card-appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+    height: fit-content;
+    width:70%;
+}
+
+#navset {
+    
+    padding-left: 45%;
+    padding-top: 21px;
+
+}
+
+#profilediv {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin-left: 30%;
+    margin-top: 40px;
+}
+#warning{
+    display: none;
+}
+.aboutme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60%;
+    margin-right: 40%;
+    width: 50vw;
+    margin-top: 100px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.experience {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+.experience-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45%;
+    margin-right: 20%;
+    width: 50vw;
+    margin-top: 100px;
+}
+.experience .line {
+    width: 2px;
+    background-color: #ccc;
+    margin: 0 20px;
+}
+
+.experience .left,
+.experience .right {
+    flex: 1;
+}
+
+.experience .left {
+    text-align: right;
+    padding-right: 0px;
+}
+
+.experience .right {
+    text-align: left;
+    padding-left: 0px;
+}
+
+.experience h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.experience p {
+    margin-top: 5px;
+    color: #666;
+}
+#imageprofilediv {
+    float: left;
+
+}
+
+#profileinfo {
+    margin: 30px;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#image1 {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: 23px double black;
+
+}
+
+.displayCards {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.card {
+    border-radius: 10%;
+    width: 220px;
+    height: max-content;
+    /* Adjust height as needed */
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 15px;
+    /* Add margin between cards */
+    flex: 0 0 auto;
+    /* Prevent cards from growing or shrinking */
+}
+
+.heading {
+
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+#headings{
+    text-align: center; color: silver; font-size: 25px; 
+}
+
+.contentcard {
+    height: max-content;
+    padding: 40px 20px 20px;
+    color: white;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    flex-direction: row;
+    justify-content: row;
+    align-items: center;
+}
+
+#circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #000;
+
+}
+#paneheading{
+    color: white; text-align: center; font-size: 30px; font-weight: bold;
+}
+#keyss{
+    display: flex;
+    flex-direction: row;
+   align-items: start;
+    height: 10px; width: 10px; 
+}
+.road {
+    z-index: 0;
+    margin: 0;
+    right: 0;
+    position: relative;
+    height: 300vh;
+    width: 300px;
+    float: right;
+    /* background-image: url("assets/road.jpg"); */
+}
+#inverted {
+    transform: scaleY(-1);
+}
+#pane {
+    position: absolute;
+    width: 100%;
+    height: 550vh;
+    /* border: 2px solid black; */
+}
+
+/* #box {
+
+    position: relative;
+    background: transparent;
+    background-image: url("assets/space-shuttle.png");
+    top: 200px;
+    left: 20%;
+    width: 100px;
+    height: 175px;
+    border: #fff solid;
+} */
+#hi{
+    color:silver;
+    font-size: 30px; 
+    font-family: "Noto Sans JP", sans-serif;
+
+}
+#name{
+    font-family: "Plus Jakarta Sans", sans-serif; font-size: 50px; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); color:white; opacity: 90%; margin-bottom: 20px;
+}
+#para{
+    width: 100%;color:silver;font-size: 20px;
+}
+#para1{
+    width: 100%;color:silver;font-size: 20px;
+}
+#box {
+    /* display: flex; */
+    /* justify-items: center; */
+    position: relative;
+    background: transparent no-repeat;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/jaimam-7c41f.appspot.com/o/space-shuttle.png?alt=media&token=cafae640-70ac-455c-8a2d-f69eaf459f5b");
+    background-size: contain;
+    top: 150px;
+    /* left: 20%; */
+    width: 150px;
+    height: 200px;
+    transition: transform 0.2s; /* Smooth transition for the inversion */
+
+    /* border: #fff solid; */
+    transform: scaleY(-1);
+}
+
+.techstack{  
+    padding-top: 10%;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.techimages{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+#techpic{
+     padding-left:20px; 
+    height: 50px;
+  width: fit-content;
+}
+
+.displayProject{
+  
+ margin-left: 10%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+flex-wrap: wrap;
+ 
+}
+.image-container {
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+.left-section {
+    width: 30%;
+    background-color: transparent;
+    height: 200px; /* Set the initial height of the left section */
+    overflow: hidden;
+  padding-left: 20px;
+    height: fit-content; /* Hide overflowing content */
+}
+
+.left-section img {
+    width: 100%; /* Ensure the image width fills its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right-section {
+    padding-left: 2%;
+    display: flex;
+    width: 70%;
+    background-color: transparent;
+    flex-direction: column;
+}
+.left1-section {
+    padding-right: 2%;
+    display: flex;
+    width: 70%;
+    background-color: transparent;
+    flex-direction: column;
+   
+}
+
+.right1-section {
+    width: 30%;
+    background-color: transparent;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+  
+    border-radius: 5px; 
+    padding: 20px;
+    margin: 10px;
+    width: 80vw;
+    vertical-align: top;
+}
+
+.project-card h2 {
+    margin-top: 0;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  #experience-title{
+    color: rgb(181, 172, 172);
+  }
+  #experience-details{
+    color: rgb(181, 172, 172);
+  }
+  
+
+#explosion {
+    display: none;
+    width: 110px;
+    transform: scaleY(-1);   
+    padding-bottom: 145px;
+}
+#rightheading{
+    color: white; text-align: left; font-size: 40px; font-weight: bold;
+}
+#rightcontent{
+    color: silver; width: 50%;
+}
+#leftheading{
+    color: white; text-align: right; font-size: 40px; font-weight: bold;
+}
+#leftcontent{
+    padding-left: 50%;
+    color: silver; text-align: right; width: 100%;
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+ 
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}

@@ -1,0 +1,24 @@
+.project{
+    padding: 10%;
+}
+.box {
+    width: 60%;
+    padding: 10%;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    width: 30%;
+    background-color: lightblue;
+}
+
+.right-section {
+    display: flex;
+    width: 70%;
+    background-color: lightgreen;
+    flex-direction: column;
+}
